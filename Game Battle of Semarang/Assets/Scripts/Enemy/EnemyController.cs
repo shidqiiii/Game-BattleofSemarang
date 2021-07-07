@@ -5,21 +5,34 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public static EnemyController instance;
+    public enum EnemyStates { shooting, hurt, moving, ended };
+    public EnemyStates currentStates;
 
-    public float moveSpeed, distanceToPlayer;
+    public Transform theEnemy;
+    public Animator anim;
+
+    [Header("Movement")]
+    public float moveSpeed;
     public Transform leftPoint, rightPoint;
+    private bool moveRight;
 
-    private bool movingRight;
-
-    public Rigidbody2D theRB;
-    private Animator anim;
-    public SpriteRenderer theSR;
-
-    public float moveTime, waitTime; 
-    private float moveCount, waitCount;
-
+    [Header("Shooting")]
+    public GameObject bullet;
+    public Transform shotPoint;
     public float timeBetweenShots;
     private float shotCounter;
+
+    [Header("Hurt")]
+    public float hurtTime;
+    private float hurtCoutner;
+    public GameObject hitBox;
+
+    [Header("Health")]
+    public int health = 3;
+    public GameObject deathEffect, collectible;
+    private bool isDefeated;
+    public float shotSpeedUp;
+
 
     private void Awake()
     {
@@ -29,101 +42,115 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        theRB = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
-        theSR = GetComponentInChildren<SpriteRenderer>();
-
-        leftPoint.parent = null;
-        rightPoint.parent = null;
-
-        movingRight = true;
-
-        moveCount = moveTime;
+        currentStates = EnemyStates.shooting;
     }
 
     // Update is called once per frame
     void Update()
     {
-        CheckPlayer(); //MissingReferenceException: The object of type 'Transform' has been destroyed but you are still trying to access it.
+        EnenmySwitchState();
     }
 
-    public void Movement()
+    public void EnenmySwitchState()
     {
-        if(moveCount > 0)
+        switch (currentStates)
         {
-            moveCount -= Time.deltaTime;
+            case EnemyStates.shooting:
+                shotCounter -= Time.deltaTime;
 
-            if (movingRight)
-            {
-                theRB.velocity = new Vector2(moveSpeed, theRB.velocity.y);
-                transform.eulerAngles = Vector2.zero;
-
-                if (transform.position.x > rightPoint.position.x)
+                if(shotCounter <= 0)
                 {
-                    movingRight = false;
+                    shotCounter = timeBetweenShots;
+                    var newBullet = Instantiate(bullet, shotPoint.position, shotPoint.rotation);
+                    newBullet.transform.localScale = theEnemy.localScale;
                 }
-            }
-            else
-            {
-                theRB.velocity = new Vector2(-moveSpeed, theRB.velocity.y);
-                transform.eulerAngles = Vector2.up * 180;
 
-                if (transform.position.x < leftPoint.position.x)
+                break;
+
+            case EnemyStates.hurt:
+                if(hurtCoutner > 0)
                 {
-                    movingRight = true;
-                }
-            }
+                    hurtCoutner -= Time.deltaTime;
 
-            if (moveCount <= 0)
-            {
-                waitCount = Random.Range(0, waitTime);
-            }
-            anim.SetBool("isMoving", true);
+                    if(hurtCoutner <=0)
+                    {
+                        currentStates = EnemyStates.moving;
+
+                        if (isDefeated)
+                        {
+                            theEnemy.gameObject.SetActive(false);
+                            Instantiate(deathEffect, theEnemy.position, theEnemy.rotation);
+                            Instantiate(collectible, theEnemy.position, theEnemy.rotation);
+
+                            currentStates = EnemyStates.ended;
+                        }
+                    }
+                }
+
+                break;
+
+            case EnemyStates.moving:
+                if (moveRight)
+                {
+                    theEnemy.position += new Vector3(moveSpeed * Time.deltaTime, 0f, 0f);
+
+                    if(theEnemy.position.x > rightPoint.position.x)
+                    {
+                        theEnemy.localScale = new Vector3(.5f, .5f, 1f);
+                        moveRight = false;
+
+                        EndMovement();
+                    }
+                }
+                else
+                {
+                    theEnemy.position -= new Vector3(moveSpeed * Time.deltaTime, 0f, 0f);
+
+                    if (theEnemy.position.x < leftPoint.position.x)
+                    {
+                        theEnemy.localScale = new Vector3(-.5f, .5f, 1f);
+                        moveRight = true;
+
+                        EndMovement();
+                    }
+                }
+
+                break;
         }
-        else if(waitCount > 0)
+
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.H))
         {
-            waitCount -= Time.deltaTime;
-            theRB.velocity = new Vector2(0f, theRB.velocity.y);
-
-            if(waitCount <= 0)
-            {
-                moveCount = Random.Range(0, waitTime);
-            }
-
-            anim.SetBool("isMoving", false);
+            TakeHit();
         }
-        
+#endif
+
     }
 
-    //Check position the player on enemy left or right enemy
-    public void CheckPlayer()
+    public void TakeHit()
     {
-        if(Vector3.Distance(transform.position, PlayerController.instance.transform.position) > distanceToPlayer)
+        currentStates = EnemyStates.hurt;
+        hurtCoutner = hurtTime;
+        anim.SetTrigger("Hit");
+
+        health--;
+        if(health <= 0)
         {
-            Movement();
+            isDefeated = true;
         }
         else
         {
-            theRB.velocity = new Vector2(0f, theRB.velocity.y);
-            anim.SetBool("isMoving", false);
-
-            shotCounter -= Time.deltaTime;
-
-            if (shotCounter <= 0)
-            {
-                shotCounter = timeBetweenShots;
-                EnemyShoot.instance.ShootBullet(); //MissingReferenceException: The object of type 'Transform' has been destroyed but you are still trying to access it.
-            }
-
-            if (PlayerController.instance.transform.position.x < transform.position.x)
-            {
-                transform.eulerAngles = Vector2.up * 180;
-            }
-            else
-            {
-                transform.eulerAngles = Vector2.zero;
-            }
-
+            timeBetweenShots /= shotSpeedUp;
         }
+    }
+
+    private void EndMovement()
+    {
+        currentStates = EnemyStates.shooting;
+
+        shotCounter = timeBetweenShots;
+        anim.SetTrigger("StopMoving");
+
+        hitBox.SetActive(true);
     }
 }

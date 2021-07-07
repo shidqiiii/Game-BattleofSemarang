@@ -25,7 +25,7 @@ public class PlayerShoot : MonoBehaviour
         {
             if(LevelManager.instance.extraBulletCollected > 0)
             {
-                Instantiate(bullet, shootPoint.position, transform.rotation);
+                Instantiate(bullet, shootPoint.position, shootPoint.rotation);
                 LevelManager.instance.extraBulletCollected--;
             }
             else

@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy Idle
+  m_Name: Enemy_Idle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -35,7 +35,7 @@ AnimationClip:
       value: {fileID: 2581617792653905830, guid: 73e2f69240d603849af2f465d281c9c2,
         type: 3}
     attribute: m_Sprite
-    path: Enemy Sprite
+    path: 
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 60
@@ -46,7 +46,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 3028585050
+      path: 0
       attribute: 0
       script: {fileID: 0}
       typeID: 212

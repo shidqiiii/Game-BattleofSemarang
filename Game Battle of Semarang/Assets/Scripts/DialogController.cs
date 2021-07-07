@@ -7,6 +7,7 @@ public class DialogController : MonoBehaviour
 {
     public static DialogController instance;
 
+    [TextArea(3, 10)]
     public string[] sentences;
     public float textSpeed;
     public Text text;

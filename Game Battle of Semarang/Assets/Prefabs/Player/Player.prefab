@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8915834825517586480}
   - component: {fileID: 8915834825517586483}
-  - component: {fileID: 8915834825517586482}
   - component: {fileID: 8915834825517586481}
   - component: {fileID: 8915834825517586486}
   - component: {fileID: 8915834825517586487}
   - component: {fileID: 8915834825517586484}
   - component: {fileID: 8915834825517586485}
+  - component: {fileID: 5622300117616373477}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -90,22 +90,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &8915834825517586482
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8915834825517586493}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 2140166c53fe7b24098886c43834a688, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.020609856}
-  m_Size: {x: 3.93, y: 3.98878}
-  m_Direction: 0
 --- !u!50 &8915834825517586481
 Rigidbody2D:
   serializedVersion: 4
@@ -199,6 +183,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootPoint: {fileID: 8915834825541909546}
   bullet: {fileID: 6444491144135916764, guid: 47f38833685f93b45978819a3ec8dd60, type: 3}
+--- !u!58 &5622300117616373477
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8915834825517586493}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2
 --- !u!1 &8915834825541909589
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,7 +223,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8915834825541909589}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.48, y: -0.42, z: 0}
+  m_LocalPosition: {x: 2.92, y: -0.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8915834825517586480}

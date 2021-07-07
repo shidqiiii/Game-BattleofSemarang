@@ -43,6 +43,8 @@ public class PlayerHealthController : MonoBehaviour
             {
                 currentHealth = 0;
                 Instantiate(deathEffect, transform.position, transform.rotation);
+                
+                //Jika player mati aktifkan UI
                 LevelManager.instance.RespawnPlayer();
             }
             else

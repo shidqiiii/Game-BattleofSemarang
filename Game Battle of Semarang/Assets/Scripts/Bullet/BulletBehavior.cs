@@ -25,15 +25,11 @@ public class BulletBehavior : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Enemy")
+        if (collision.CompareTag("Tilemap"))
         {
             Destroy(gameObject);
         }
-        else if (collision.tag == "Tilemap")
-        {
-            Destroy(gameObject);
-        }
-        else if (collision.tag == "Player")
+        else if (collision.CompareTag("Enemy"))
         {
             Destroy(gameObject);
         }
