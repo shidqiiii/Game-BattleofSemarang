@@ -23,10 +23,11 @@ public class EnemyShoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
     }
+
     public void ShootBullet()
     {
-        Instantiate(bullet, shootPoint.position, transform.rotation);
-        
+        Instantiate(bullet, shootPoint.position, shootPoint.rotation); //Error: The object of type 'Transform' has been destroyed but you are still trying to access it.
     }
 }

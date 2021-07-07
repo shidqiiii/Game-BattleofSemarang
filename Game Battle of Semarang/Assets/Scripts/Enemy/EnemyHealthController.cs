@@ -41,7 +41,6 @@ public class EnemyHealthController : MonoBehaviour
             currentHealth = 0;
             Instantiate(deathEffect, transform.position, transform.rotation);
             Destroy(gameObject);
-
             Instantiate(collectible, transform.position, transform.rotation);
         }
 

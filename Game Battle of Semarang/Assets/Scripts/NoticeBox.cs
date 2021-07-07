@@ -26,10 +26,9 @@ public class NoticeBox : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.tag == "Player")
         {
             trigger = true;
-
         }
     }
 
@@ -38,6 +37,7 @@ public class NoticeBox : MonoBehaviour
         dialog.SetActive(true);
         DialogController.instance.text.text = string.Empty;
         DialogController.instance.StartDialog();
+        trigger = false;
     }
 
 }

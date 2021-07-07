@@ -21,8 +21,6 @@ public class EnemyController : MonoBehaviour
     public float timeBetweenShots;
     private float shotCounter;
 
-    Transform enemy;
-
     private void Awake()
     {
         instance = this;
@@ -41,18 +39,12 @@ public class EnemyController : MonoBehaviour
         movingRight = true;
 
         moveCount = moveTime;
-
-        enemy = GameObject.FindGameObjectWithTag("Enemy").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(enemy != null)
-        {
-            CheckPlayer();
-        }
-        
+        CheckPlayer(); //MissingReferenceException: The object of type 'Transform' has been destroyed but you are still trying to access it.
     }
 
     public void Movement()
@@ -103,6 +95,7 @@ public class EnemyController : MonoBehaviour
         
     }
 
+    //Check position the player on enemy left or right enemy
     public void CheckPlayer()
     {
         if(Vector3.Distance(transform.position, PlayerController.instance.transform.position) > distanceToPlayer)
@@ -119,8 +112,7 @@ public class EnemyController : MonoBehaviour
             if (shotCounter <= 0)
             {
                 shotCounter = timeBetweenShots;
-
-                EnemyShoot.instance.ShootBullet();
+                EnemyShoot.instance.ShootBullet(); //MissingReferenceException: The object of type 'Transform' has been destroyed but you are still trying to access it.
             }
 
             if (PlayerController.instance.transform.position.x < transform.position.x)
