@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class NoticeBox : MonoBehaviour
 {
-    public GameObject dialog;
+    public GameObject dialog, textE;
 
     public bool trigger;
 
@@ -29,6 +29,7 @@ public class NoticeBox : MonoBehaviour
         if (collision.tag == "Player")
         {
             trigger = true;
+            textE.SetActive(true);
         }
     }
 
@@ -38,6 +39,7 @@ public class NoticeBox : MonoBehaviour
         DialogController.instance.text.text = string.Empty;
         DialogController.instance.StartDialog();
         trigger = false;
+        textE.SetActive(false);
     }
 
 }

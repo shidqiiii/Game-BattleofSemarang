@@ -36,7 +36,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Movement();
+        if (!PauseMenu.instance.isPaused)
+        {
+            Movement();
+        }
     }
 
     public void Movement()

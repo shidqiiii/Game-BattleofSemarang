@@ -42,10 +42,10 @@ public class PlayerHealthController : MonoBehaviour
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
+                gameObject.SetActive(false);
                 Instantiate(deathEffect, transform.position, transform.rotation);
-                
                 //Jika player mati aktifkan UI
-                LevelManager.instance.RespawnPlayer();
+                FailedMenu.instance.SuccessfulUnsuccessful();
             }
             else
             {

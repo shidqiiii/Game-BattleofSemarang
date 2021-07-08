@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelSelect : MonoBehaviour
 {
+    public string stageOne, stageTwo, stageTree;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,14 +16,24 @@ public class LevelSelect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Back();
-    }
-
-    void Back()
-    {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             SceneManager.LoadScene(0);
         }
+    }
+
+    public void StageOne()
+    {
+        SceneManager.LoadScene(stageOne);
+    }
+
+    public void StageTwo()
+    {
+        SceneManager.LoadScene(stageTwo);
+    }
+
+    public void StageTree()
+    {
+        SceneManager.LoadScene(stageTree);
     }
 }

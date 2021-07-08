@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 319122625}
   - component: {fileID: 319122624}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button level 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -202,7 +202,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 319122625}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2029191292}
+        m_MethodName: StageOne
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &319122625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -414,7 +425,7 @@ GameObject:
   - component: {fileID: 366217821}
   - component: {fileID: 366217820}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Button level 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -482,7 +493,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 366217821}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2029191292}
+        m_MethodName: StageTwo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &366217821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,7 +633,7 @@ GameObject:
   - component: {fileID: 666375631}
   - component: {fileID: 666375630}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Button level 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -679,7 +701,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 666375631}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2029191292}
+        m_MethodName: StageTree
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &666375631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -900,7 +933,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -100}
+  m_AnchoredPosition: {x: 0, y: -125}
   m_SizeDelta: {x: 1400, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1740911701
@@ -950,7 +983,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Select Stage
+  m_Text: Pilih Level
 --- !u!222 &1740911703
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1142,6 +1175,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a37f3584654d20418a649f49389cdae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stageOne: StageOne
+  stageTwo: StageTwo
+  stageTree: StageTree
 --- !u!1 &2146925678
 GameObject:
   m_ObjectHideFlags: 0
