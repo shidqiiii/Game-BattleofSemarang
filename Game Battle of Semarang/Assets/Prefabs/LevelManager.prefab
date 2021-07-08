@@ -44,4 +44,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitToRespawn: 2
-  extraBulletCollected: 10
+  extraBulletCollected: 15
+  levelToLoad: LevelSelect

@@ -11,6 +11,14 @@ public class UIController : MonoBehaviour
     public Sprite heartFull, heartEmpty, heartHalf;
     public Text ExtraBuleltText;
 
+    [Header("FadeScreen")]
+    public Image fadeScreen;
+    public float fadeSpeed;
+    private bool shouldFadeToBlack, shouldFadeFromBlack;
+
+    [Header("Stage Complete")]
+    public GameObject stageCompleteText;
+
     private void Awake()
     {
         instance = this;
@@ -20,12 +28,14 @@ public class UIController : MonoBehaviour
     void Start()
     {
         UpdateExtraBullet();
+        FadeFromBlack();
     }
 
     // Update is called once per frame
     void Update()
     {
         UpdateHealthDisplay();
+        FadeScreen();
     }
 
     public void UpdateHealthDisplay()
@@ -85,5 +95,38 @@ public class UIController : MonoBehaviour
     public void UpdateExtraBullet()
     {
         ExtraBuleltText.text = LevelManager.instance.extraBulletCollected.ToString();
+    }
+
+    public void FadeToBlack()
+    {
+        shouldFadeToBlack = true;
+        shouldFadeFromBlack = false;
+    }
+
+    public void FadeFromBlack()
+    {
+        shouldFadeFromBlack = true;
+        shouldFadeToBlack = false;
+    }
+
+    public void FadeScreen()
+    {
+        if (shouldFadeToBlack)
+        {
+            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
+            if (fadeScreen.color.a == 1f)
+            {
+                shouldFadeToBlack = false;
+            }
+        }
+
+        if (shouldFadeFromBlack)
+        {
+            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeSpeed * Time.deltaTime));
+            if (fadeScreen.color.a == 0f)
+            {
+                shouldFadeFromBlack = false;
+            }
+        }
     }
 }
