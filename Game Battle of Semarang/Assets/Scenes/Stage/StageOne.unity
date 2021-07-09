@@ -20254,7 +20254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1387382791, guid: 7926554bad339a64c9c2c8fae652bc83, type: 3}
       propertyPath: sentences.Array.data[0]
-      value: Selamat datang di Game Battle of Semarang
+      value: Selamat datang di Game Battle of Semarang.
       objectReference: {fileID: 0}
     - target: {fileID: 1387382791, guid: 7926554bad339a64c9c2c8fae652bc83, type: 3}
       propertyPath: sentences.Array.data[1]
