@@ -204,14 +204,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2029191292}
-        m_MethodName: StageOne
-        m_Mode: 1
+        m_MethodName: LevelToLoad
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Stage 1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &319122625
@@ -469,7 +469,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -479,10 +479,11 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300000, guid: 55dbec07975c1484e9367e7f87314780,
+      type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 2d4a062c05d3fd448b842637bc281909, type: 3}
     m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 21300000, guid: d27192736ffead6498cc04cad38b6a6a, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -495,14 +496,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2029191292}
-        m_MethodName: StageTwo
-        m_Mode: 1
+        m_MethodName: LevelToLoad
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Stage 2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &366217821
@@ -677,7 +678,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -687,10 +688,11 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300000, guid: 84ce4ae99bdc62b4c85c1997fb15dba7,
+      type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 93c122e27835d054c964b6b70bd96c00, type: 3}
     m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 21300000, guid: a5264d481ebf14649b1cb323e0a9db0a, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -703,14 +705,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2029191292}
-        m_MethodName: StageTree
-        m_Mode: 1
+        m_MethodName: LevelToLoad
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Stage 3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &666375631
@@ -983,7 +985,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pilih Level
+  m_Text: Pilih Stage
 --- !u!222 &1740911703
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1175,9 +1177,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a37f3584654d20418a649f49389cdae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageOne: StageOne
-  stageTwo: StageTwo
-  stageTree: StageTree
+  levelButtons:
+  - {fileID: 319122624}
+  - {fileID: 366217820}
+  - {fileID: 666375630}
 --- !u!1 &2146925678
 GameObject:
   m_ObjectHideFlags: 0

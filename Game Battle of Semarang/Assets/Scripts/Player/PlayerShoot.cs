@@ -21,7 +21,7 @@ public class PlayerShoot : MonoBehaviour
 
     public void ShootBullet()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             if(LevelManager.instance.extraBulletCollected > 0)
             {

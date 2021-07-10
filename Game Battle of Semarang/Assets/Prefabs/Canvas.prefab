@@ -320,7 +320,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pause Menu
+  m_Text: Menu Jeda
 --- !u!1 &5843444022200808873
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,7 +476,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level Failed
+  m_Text: Stage Gagal
 --- !u!1 &8367832545938320058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1118,7 +1118,7 @@ MonoBehaviour:
     m_LineSpacing: 1.25
   m_Text: 'Stage
 
-    Complete!'
+    Berhasil!'
 --- !u!114 &8544392582575339902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1342,7 +1342,7 @@ PrefabInstance:
     - target: {fileID: 3175702255625117941, guid: 2badc4d787eb470408444001f4761dc2,
         type: 3}
       propertyPath: m_Text
-      value: Select Level
+      value: Pilih Stage
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2badc4d787eb470408444001f4761dc2, type: 3}
@@ -1482,7 +1482,7 @@ PrefabInstance:
     - target: {fileID: 3175702255625117941, guid: 2badc4d787eb470408444001f4761dc2,
         type: 3}
       propertyPath: m_Text
-      value: Select Level
+      value: Pilih Stage
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2badc4d787eb470408444001f4761dc2, type: 3}
@@ -1622,7 +1622,7 @@ PrefabInstance:
     - target: {fileID: 3175702255625117941, guid: 2badc4d787eb470408444001f4761dc2,
         type: 3}
       propertyPath: m_Text
-      value: Main Menu
+      value: Menu Utama
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2badc4d787eb470408444001f4761dc2, type: 3}
@@ -1762,7 +1762,7 @@ PrefabInstance:
     - target: {fileID: 3175702255625117941, guid: 2badc4d787eb470408444001f4761dc2,
         type: 3}
       propertyPath: m_Text
-      value: Restart
+      value: Coba Lagi
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2badc4d787eb470408444001f4761dc2, type: 3}
@@ -1902,7 +1902,7 @@ PrefabInstance:
     - target: {fileID: 3175702255625117941, guid: 2badc4d787eb470408444001f4761dc2,
         type: 3}
       propertyPath: m_Text
-      value: Resume
+      value: Melanjutkan
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2badc4d787eb470408444001f4761dc2, type: 3}
@@ -2042,7 +2042,7 @@ PrefabInstance:
     - target: {fileID: 3175702255625117941, guid: 2badc4d787eb470408444001f4761dc2,
         type: 3}
       propertyPath: m_Text
-      value: Main Menu
+      value: Menu Utama
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2badc4d787eb470408444001f4761dc2, type: 3}

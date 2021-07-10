@@ -11,6 +11,8 @@ public class LevelManager : MonoBehaviour
     public int extraBulletCollected;
     public string levelToLoad;
 
+    public int levelToUnlock;
+
     private void Awake()
     {
         instance = this;
@@ -62,6 +64,8 @@ public class LevelManager : MonoBehaviour
 
         UIController.instance.FadeToBlack();
         yield return new WaitForSeconds((1f / UIController.instance.fadeSpeed) + 3f);
+
+        PlayerPrefs.SetInt("LevelReached", levelToUnlock);
 
         SceneManager.LoadScene(levelToLoad);
     }
