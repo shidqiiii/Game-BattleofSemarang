@@ -39,10 +39,10 @@ public class LevelManager : MonoBehaviour
     {
         PlayerController.instance.gameObject.SetActive(false);
 
-        yield return new WaitForSeconds(waitToRespawn - 1f/ UIController.instance.fadeSpeed);
-        UIController.instance.FadeToBlack();
-        yield return new WaitForSeconds(waitToRespawn - (1f / UIController.instance.fadeSpeed) + .2f);
-        UIController.instance.FadeFromBlack();
+        yield return new WaitForSeconds(waitToRespawn - 1f/ FadeScreen.instance.fadeSpeed);
+        FadeScreen.instance.FadeToBlack();
+        yield return new WaitForSeconds(waitToRespawn - (1f / FadeScreen.instance.fadeSpeed) + .2f);
+        FadeScreen.instance.FadeFromBlack();
 
         PlayerController.instance.gameObject.SetActive(true);
         PlayerController.instance.transform.position = CheckpointController.instance.spawnPoint;
@@ -62,8 +62,8 @@ public class LevelManager : MonoBehaviour
         UIController.instance.stageCompleteText.SetActive(true);
         yield return new WaitForSeconds(1.5f);
 
-        UIController.instance.FadeToBlack();
-        yield return new WaitForSeconds((1f / UIController.instance.fadeSpeed) + 3f);
+        FadeScreen.instance.FadeToBlack();
+        yield return new WaitForSeconds((1f / FadeScreen.instance.fadeSpeed) + 3f);
 
         PlayerPrefs.SetInt("LevelReached", levelToUnlock);
 

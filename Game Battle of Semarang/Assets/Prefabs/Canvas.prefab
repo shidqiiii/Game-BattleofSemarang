@@ -88,7 +88,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2d2d0d5e4c9f4f49a74d787a404b33b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentences: []
+  sentences:
+  - Selamat datang kembali.
+  - Hotel Du Pavillon sedang diserang oleh Pasukan Kido.
+  - Mari bantu para pejuang untuk mempertahankan markas mereka. Segera menuju Hotel
+    Du Pavillon!
   textSpeed: 0.01
   text: {fileID: 1566414954}
 --- !u!1 &1566414952
@@ -642,6 +646,7 @@ GameObject:
   - component: {fileID: 8367832546314657643}
   - component: {fileID: 4969067821422994497}
   - component: {fileID: 1247889373264452274}
+  - component: {fileID: 8367832546530543721}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -760,8 +765,6 @@ MonoBehaviour:
   heartHalf: {fileID: -4195582761621981391, guid: e37f3ed92be5f0f4b9e65177c1a511e9,
     type: 3}
   ExtraBuleltText: {fileID: 8367832547387711212}
-  fadeScreen: {fileID: 8805050260726751547}
-  fadeSpeed: 3
   stageCompleteText: {fileID: 8946992159252515505}
 --- !u!114 &4969067821422994497
 MonoBehaviour:
@@ -791,10 +794,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fccd639b8bc1b654d96b13065e2b7fd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restart: 
+  restart: Stage 2
   levelSelect: LevelSelect
   mainMenu: MainMenu
   failedScreen: {fileID: 5843444022200808873}
+--- !u!114 &8367832546530543721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8367832546314657646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01352850564c7fd48af6fbe3df761736, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imagefadeScreen: {fileID: 8805050260726751547}
+  fadeSpeed: 3
 --- !u!1 &8367832546539410791
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,13 +8,14 @@ public class Options : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        FadeScreen.instance.FadeFromBlack();
     }
 
     // Update is called once per frame
     void Update()
     {
         Back();
+        FadeScreen.instance.Fade();
     }
     
     public void Back()

@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Stage/Stage 3.unity
     guid: 4240603eadd487a488fe217adba68e21
   - enabled: 1
-    path: Assets/Scenes/Options Menu/Options.unity
+    path: Assets/Scenes/Options.unity
     guid: 7f81577f60ab22c4aa2b7daf274355cc
   - enabled: 1
     path: Assets/Scenes/Options Menu/About.unity
@@ -32,4 +32,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Options Menu/Tutorial 2.unity
     guid: 063f9053985792b428bc1c0c7b23920f
+  - enabled: 1
+    path: Assets/Scenes/Stage/Epilog 1.unity
+    guid: 90905fed4491def48a4d7e376a429268
+  - enabled: 1
+    path: Assets/Scenes/Stage/Prolog 1.unity
+    guid: 558561ead5e930c4e8000e4780e9619f
+  - enabled: 1
+    path: Assets/Scenes/Stage/Prolog 2.unity
+    guid: 79da7eb65cd076f489314ab440b570b7
+  - enabled: 1
+    path: Assets/Scenes/Stage/Prolog 3.unity
+    guid: 839d5724cb8feaa43be760465f568716
   m_configObjects: {}

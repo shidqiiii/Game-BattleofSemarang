@@ -19291,43 +19291,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1387382791, guid: 7926554bad339a64c9c2c8fae652bc83, type: 3}
-      propertyPath: sentences.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1387382791, guid: 7926554bad339a64c9c2c8fae652bc83, type: 3}
-      propertyPath: sentences.Array.data[0]
-      value: Selamat datang kembali.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1387382791, guid: 7926554bad339a64c9c2c8fae652bc83, type: 3}
-      propertyPath: sentences.Array.data[1]
-      value: Hotel Du Pavillon sedang diserang oleh Pasukan Kido.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1387382791, guid: 7926554bad339a64c9c2c8fae652bc83, type: 3}
-      propertyPath: sentences.Array.data[2]
-      value: Mari bantu para pejuang untuk mempertahankan markas mereka. Segera menuju
-        Hotel Du Pavillon!
-      objectReference: {fileID: 0}
-    - target: {fileID: 1387382791, guid: 7926554bad339a64c9c2c8fae652bc83, type: 3}
-      propertyPath: sentences.Array.data[3]
-      value: Setelah kedatangan Pasukan Kido di Jalan Pandanaran, segera menuju Simpang
-        Empat Siranda untuk menyiapkan strategi!
-      objectReference: {fileID: 0}
-    - target: {fileID: 1247889373264452274, guid: 7926554bad339a64c9c2c8fae652bc83,
-        type: 3}
-      propertyPath: restart
-      value: Stage 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3929435009338455155, guid: 7926554bad339a64c9c2c8fae652bc83,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5843444022200808873, guid: 7926554bad339a64c9c2c8fae652bc83,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8367832546314657642, guid: 7926554bad339a64c9c2c8fae652bc83,
         type: 3}
       propertyPath: m_Pivot.x
@@ -19437,11 +19400,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 8367832546314657646, guid: 7926554bad339a64c9c2c8fae652bc83,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7926554bad339a64c9c2c8fae652bc83, type: 3}

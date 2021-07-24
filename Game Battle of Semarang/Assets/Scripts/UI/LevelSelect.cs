@@ -11,6 +11,8 @@ public class LevelSelect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        FadeScreen.instance.FadeFromBlack();
+
         int levelReached = PlayerPrefs.GetInt("LevelReached", 1);
         for(int i = 0; i < levelButtons.Length; i++)
         {
@@ -25,6 +27,7 @@ public class LevelSelect : MonoBehaviour
     void Update()
     {
         Back();
+        FadeScreen.instance.Fade();
     }
 
     public void Back()

@@ -24217,6 +24217,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8442620951424426148, guid: 93982eb2929dde843b5eedc8d21ba80b,
         type: 3}
+      propertyPath: levelToLoad
+      value: Epilog 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8442620951424426148, guid: 93982eb2929dde843b5eedc8d21ba80b,
+        type: 3}
       propertyPath: levelToUnlock
       value: 4
       objectReference: {fileID: 0}

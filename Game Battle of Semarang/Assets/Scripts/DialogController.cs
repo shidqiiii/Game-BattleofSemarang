@@ -22,13 +22,14 @@ public class DialogController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        text.text = string.Empty;
+        StartDialog();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             if(text.text == sentences[index])
             {
