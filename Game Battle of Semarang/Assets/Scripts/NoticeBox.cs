@@ -38,6 +38,7 @@ public class NoticeBox : MonoBehaviour
         dialog.SetActive(true);
         DialogController.instance.text.text = string.Empty;
         DialogController.instance.StartDialog();
+        PlayerController.instance.stopInput = true;
         trigger = false;
         textE.SetActive(false);
     }

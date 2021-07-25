@@ -283,12 +283,12 @@ MonoBehaviour:
   currentStates: 0
   theEnemy: {fileID: 5540228177192937317}
   anim: {fileID: 5540228177192937318}
-  moveSpeed: 10
+  moveSpeed: 12
   leftPoint: {fileID: 5540228175608575902}
   rightPoint: {fileID: 5540228176551862801}
   bullet: {fileID: 2658636687242705841, guid: 6f2108d0cbf461042b658baa280184ee, type: 3}
   shotPoint: {fileID: 5540228175607488376}
-  timeBetweenShots: 1.5
+  timeBetweenShots: 1.4
   hurtTime: 0.1
   hitBox: {fileID: 5540228175308904905}
   health: 3
@@ -296,7 +296,7 @@ MonoBehaviour:
     type: 3}
   collectible: {fileID: 5670648142827709048, guid: 3c9ac38c8e35c40419759cabbc56f585,
     type: 3}
-  shotSpeedUp: 1.2
+  shotSpeedUp: 1.35
 --- !u!1 &5540228176551862800
 GameObject:
   m_ObjectHideFlags: 0

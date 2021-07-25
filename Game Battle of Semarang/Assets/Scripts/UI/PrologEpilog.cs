@@ -14,6 +14,8 @@ public class PrologEpilog : MonoBehaviour
     void Start()
     {
         FadeScreen.instance.FadeFromBlack();
+        DialogController.instance.text.text = string.Empty;
+        DialogController.instance.StartDialog();
     }
 
     // Update is called once per frame
@@ -32,6 +34,8 @@ public class PrologEpilog : MonoBehaviour
         {
             index++;
             story[index].SetActive(true);
+            DialogController.instance.text.text = string.Empty;
+            DialogController.instance.StartDialog();
             story[index - 1].SetActive(false);
         }
         else
