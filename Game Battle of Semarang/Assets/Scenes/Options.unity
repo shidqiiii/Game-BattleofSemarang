@@ -1092,7 +1092,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 606b0f83f812a9a40ab5e17147edeee0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMuted: 0
 --- !u!114 &1664707323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1351,7 +1350,7 @@ PrefabInstance:
     - target: {fileID: 3175702255145984209, guid: 2badc4d787eb470408444001f4761dc2,
         type: 3}
       propertyPath: m_Name
-      value: Button Rate Me
+      value: Button Credit
       objectReference: {fileID: 0}
     - target: {fileID: 3175702255145984210, guid: 2badc4d787eb470408444001f4761dc2,
         type: 3}
@@ -1458,10 +1457,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3175702255145984211, guid: 2badc4d787eb470408444001f4761dc2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3175702255145984211, guid: 2badc4d787eb470408444001f4761dc2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3175702255145984211, guid: 2badc4d787eb470408444001f4761dc2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3175702255145984211, guid: 2badc4d787eb470408444001f4761dc2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1664707322}
+    - target: {fileID: 3175702255145984211, guid: 2badc4d787eb470408444001f4761dc2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3175702255145984211, guid: 2badc4d787eb470408444001f4761dc2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SceneToLoad
+      objectReference: {fileID: 0}
+    - target: {fileID: 3175702255145984211, guid: 2badc4d787eb470408444001f4761dc2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Credits
+      objectReference: {fileID: 0}
     - target: {fileID: 3175702255625117941, guid: 2badc4d787eb470408444001f4761dc2,
         type: 3}
       propertyPath: m_Text
-      value: Penilaian
+      value: Credit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2badc4d787eb470408444001f4761dc2, type: 3}

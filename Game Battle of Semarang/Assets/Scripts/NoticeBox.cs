@@ -30,6 +30,8 @@ public class NoticeBox : MonoBehaviour
         {
             trigger = true;
             textE.SetActive(true);
+
+            Invoke("CloseDialog", 1f);
         }
     }
 
@@ -39,6 +41,11 @@ public class NoticeBox : MonoBehaviour
         DialogController.instance.text.text = string.Empty;
         DialogController.instance.StartDialog();
         PlayerController.instance.stopInput = true;
+        CloseDialog();
+    }
+
+    public void CloseDialog()
+    {
         trigger = false;
         textE.SetActive(false);
     }
