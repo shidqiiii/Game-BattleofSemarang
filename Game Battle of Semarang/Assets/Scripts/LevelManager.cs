@@ -11,8 +11,6 @@ public class LevelManager : MonoBehaviour
     public int extraBulletCollected;
     public string levelToLoad;
 
-    public int levelToUnlock;
-
     private void Awake()
     {
         instance = this;
@@ -27,7 +25,7 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void RespawnPlayer()
@@ -39,7 +37,7 @@ public class LevelManager : MonoBehaviour
     {
         PlayerController.instance.gameObject.SetActive(false);
 
-        yield return new WaitForSeconds(waitToRespawn - 1f/ FadeScreen.instance.fadeSpeed);
+        yield return new WaitForSeconds(waitToRespawn - 1f / FadeScreen.instance.fadeSpeed);
         FadeScreen.instance.FadeToBlack();
         yield return new WaitForSeconds(waitToRespawn - (1f / FadeScreen.instance.fadeSpeed) + .2f);
         FadeScreen.instance.FadeFromBlack();
@@ -52,6 +50,7 @@ public class LevelManager : MonoBehaviour
 
     public void EndLevel()
     {
+        
         StartCoroutine(EndLevelCo());
     }
 
@@ -66,8 +65,22 @@ public class LevelManager : MonoBehaviour
         FadeScreen.instance.FadeToBlack();
         yield return new WaitForSeconds((1f / FadeScreen.instance.fadeSpeed) + 3f);
 
-        PlayerPrefs.SetInt("LevelReached", levelToUnlock);
-
         SceneManager.LoadScene(levelToLoad);
+
+    }
+
+    public void winLevel()
+    {
+        int currentLevel = SceneManager.GetActiveScene().buildIndex;
+        if (currentLevel > PlayerPrefs.GetInt("levelIsUnlocked"))
+        {
+            PlayerPrefs.SetInt("levelIsUnlocked", currentLevel);
+
+            if (PlayerPrefs.GetInt("levelIsUnlocked") == 4)
+            {
+                PlayerPrefs.SetInt("levelIsUnlocked", currentLevel - 1);
+            }
+        }
     }
 }
+        

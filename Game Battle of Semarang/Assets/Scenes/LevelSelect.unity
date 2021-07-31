@@ -1381,7 +1381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a37f3584654d20418a649f49389cdae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelButtons:
+  buttons:
   - {fileID: 319122624}
   - {fileID: 366217820}
   - {fileID: 666375630}

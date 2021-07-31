@@ -20,6 +20,7 @@ public class LevelEnd : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
+            LevelManager.instance.winLevel();
             LevelManager.instance.EndLevel();
         }
     }

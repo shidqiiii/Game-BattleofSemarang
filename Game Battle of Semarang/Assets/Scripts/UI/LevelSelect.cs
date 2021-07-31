@@ -6,21 +6,25 @@ using UnityEngine.SceneManagement;
 
 public class LevelSelect : MonoBehaviour
 {
-    public Button[] levelButtons;
+    int levelIsUnlocked;
+    public Button[] buttons;
 
     // Start is called before the first frame update
     void Start()
     {
         FadeScreen.instance.FadeFromBlack();
 
-        int levelReached = PlayerPrefs.GetInt("LevelReached", 1);
-        for(int i = 0; i < levelButtons.Length; i++)
+        levelIsUnlocked = PlayerPrefs.GetInt("levelIsUnlocked", 1);
+        for(int i = 0; i < buttons.Length; i++)
         {
-            if(i + 1 > levelReached)
-            {
-                levelButtons[i].interactable = false;
-            }
+            buttons[i].interactable = false;
         }
+
+        for (int i = 0; i < levelIsUnlocked; i++)
+        {
+            buttons[i].interactable = true;
+        }
+
     }
 
     // Update is called once per frame
@@ -42,4 +46,5 @@ public class LevelSelect : MonoBehaviour
     {
         SceneManager.LoadScene(level);
     }
+         
 }
