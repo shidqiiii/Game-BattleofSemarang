@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -23,7 +24,10 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (SceneManager.GetActiveScene().name == "LevelSelect")
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     public void PlaySFX(int soundToPlay)

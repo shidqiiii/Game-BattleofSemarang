@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 60972bf4a85975648b21f41ea923aae8
+guid: 003d9948eb743a444b2bc222479a6178
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -14,9 +14,6 @@ TextureImporter:
   - first:
       213: 5682393469540925955
     second: Tileset_3
-  - first:
-      213: 2403724249865808194
-    second: Tileset_4
   - first:
       213: 8040196581939011165
     second: Tileset_5
@@ -223,27 +220,6 @@ TextureImporter:
       bones: []
       spriteID: 3028cf101caebde40800000000000000
       internalID: 5682393469540925955
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset_4
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 512
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2496e33487ebb5120800000000000000
-      internalID: 2403724249865808194
       vertices: []
       indices: 
       edges: []

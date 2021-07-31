@@ -10,12 +10,14 @@ public class TutorialMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        FadeScreen.instance.FadeFromBlack();
     }
 
     // Update is called once per frame
     void Update()
     {
+        FadeScreen.instance.Fade();
+
         if (Input.GetKeyDown(KeyCode.Return))
         {
             SceneToLoad();
