@@ -70,6 +70,8 @@ public class PlayerController : MonoBehaviour
                         canDoubleJump = false;
                     }
                 }
+
+                AudioManager.instance.PlaySFX(2);
             }
 
             if (theRB.velocity.x < 0)

@@ -57,6 +57,7 @@ public class LevelManager : MonoBehaviour
 
     public IEnumerator EndLevelCo()
     {
+        AudioManager.instance.PlayLevelVictory();
         PlayerController.instance.stopInput = true;
         CameraController.instance.stopFollow = true;
         UIController.instance.stageCompleteText.SetActive(true);

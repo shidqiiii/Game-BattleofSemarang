@@ -44,6 +44,7 @@ public class PlayerHealthController : MonoBehaviour
                 currentHealth = 0;
                 gameObject.SetActive(false);
                 Instantiate(deathEffect, transform.position, transform.rotation);
+                AudioManager.instance.PlaySFX(0);
                 //Jika player mati aktifkan UI
                 FailedMenu.instance.SuccessfulUnsuccessful();
             }
@@ -51,6 +52,8 @@ public class PlayerHealthController : MonoBehaviour
             {
                 invisibleCounter = invisibleLength;
                 theSR.color = new Color(theSR.color.r, theSR.color.g, theSR.color.b, .5f);
+
+                AudioManager.instance.PlaySFX(1);
 
                 PlayerController.instance.KnockBack();
             }

@@ -25,6 +25,7 @@ public class PlayerShoot : MonoBehaviour
         {
             if(LevelManager.instance.extraBulletCollected > 0)
             {
+                AudioManager.instance.PlaySFX(3);
                 Instantiate(bullet, shootPoint.position, shootPoint.rotation);
                 LevelManager.instance.extraBulletCollected--;
             }

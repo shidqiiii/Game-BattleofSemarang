@@ -78,6 +78,7 @@ public class EnemyController : MonoBehaviour
 
                         if (isDefeated)
                         {
+                            AudioManager.instance.PlaySFX(0);
                             theEnemy.gameObject.SetActive(false);
                             Instantiate(deathEffect, theEnemy.position, theEnemy.rotation);
                             Instantiate(collectible, theEnemy.position, theEnemy.rotation);
@@ -132,6 +133,7 @@ public class EnemyController : MonoBehaviour
         currentStates = EnemyStates.hurt;
         hurtCoutner = hurtTime;
         anim.SetTrigger("Hit");
+        AudioManager.instance.PlaySFX(1);
 
         health--;
         if(health <= 0)

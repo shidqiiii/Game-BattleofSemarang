@@ -5,10 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Options : MonoBehaviour
 {
+    public bool isMuted;
+
     // Start is called before the first frame update
     void Start()
     {
         FadeScreen.instance.FadeFromBlack();
+
+        AudioListener.pause = isMuted;
     }
 
     // Update is called once per frame
@@ -35,5 +39,11 @@ public class Options : MonoBehaviour
     public void SceneToLoad(string scene)
     {
         SceneManager.LoadScene(scene);
+    }
+
+    public void MuteUnmute()
+    {
+        isMuted = !isMuted;
+        AudioListener.pause = isMuted;
     }
 }
