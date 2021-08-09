@@ -609,9 +609,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentences:
   - Pertempuran Lima hari di Semarang bermula pada tanggal 14 Oktober 1945 pasukan
-    jepang berseragam lengkap tiba - tiba menyerang dan melucuti petugas kepolisian
+    Jepang berseragam lengkap tiba - tiba menyerang dan melucuti petugas kepolisian
     yang sedang berjaga persediaan air minum di Jalan Wungkai.
-  - Setelah kejadian itu menyebar berita bahwa jepang telah meracuni air minum tersebut.
+  - Setelah kejadian itu menyebar berita bahwa Jepang telah meracuni air minum tersebut.
   - Dr. Kariadi yang menjabat sebagai kepala laboratorium Rumah Sakit Purusara pada
     saat itu langsung meneliti berita tersebut.
   - Namun sayang dalam perjalanan, Dr. Kariadi beserta asisten tewas tertembak oleh
@@ -1325,7 +1325,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1532526884
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1608,7 +1608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - Pada tanggal yang sama, di bekas asrama sekolah pelayaran yang berada di Jalan
+  - Pada tanggal yang sama, di bekas Asrama Sekolah Pelayaran yang berada di Jalan
     Pandanaran terdapat pemberontakan yang dilakukan oleh tahanan jepang.
   - "Tepat setelah apel pemindahan, tahanan jepang langsung mengambil barang \u2013
     barang yang bisa dipakai untuk melukai anggota polisi yang berjaga. "

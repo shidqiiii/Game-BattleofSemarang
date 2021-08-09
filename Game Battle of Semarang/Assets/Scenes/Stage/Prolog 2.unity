@@ -611,9 +611,8 @@ MonoBehaviour:
     yang menjadi sasaran utama dengan tujuan untuk menahan Gubernur Jawa Tengah yaitu
     Mr. Wongsonegoro.
   - 'di tanggal yang sama terdapat peristiwa berdarah di Penjara Bulu. '
-  - 'Para pemuda  datang tidakuntuk membunuh semua tawanan jepang yang berada di
-    penjara bulu sebagai bentuk balas dendam terhadap temannya yang dibunuh oleh
-    jepang. '
+  - 'Para pemuda datang untuk membunuh semua tawanan jepang yang berada di penjara
+    bulu sebagai bentuk balas dendam terhadap temannya yang dibunuh oleh jepang. '
   textSpeed: 0.01
   text: {fileID: 174190790}
 --- !u!114 &301513082
@@ -1804,8 +1803,6 @@ MonoBehaviour:
   sentences:
   - Setelah dilaporkannya peristiwa yang terjadi di Penjara Bulu, Mr. Wongsonegoro
     dan Dr. Soekardjo dibawa menuju penjara bulu untuk melihat tempat kejadian.
-  - "Tepat setelah apel pemindahan, tahanan jepang langsung mengambil barang \u2013
-    barang yang bisa dipakai untuk melukai anggota polisi yang berjaga. "
   - Pada hari itu pihak jepang memikirkan untuk menghentikan pertempuran yang terjadi.
     Terjadi negosiasi antara pihak Jepang dan Indonesia yaitu gedung yang diambil
     alih akan dikembalikan dan diganti oleh senjata yang telah diambil oleh para
