@@ -193,8 +193,7 @@ MonoBehaviour:
     m_LineSpacing: 1.5
   m_Text: Battle of Semarang merupakan game yang dikembangkan dengan tema Peristiwa
     Pertempuran Lima Hari di Semarang. Game ini menceritakan bagaimana bentuk perlawanan
-    Rakyat Semarang dalam menghadapi Pasukan Kido (Tentara Jepang) yang ingin menjajah
-    kembali Semarang.
+    Rakyat Semarang dalam menghadapi Pasukan Jepang.
 --- !u!222 &29360949
 CanvasRenderer:
   m_ObjectHideFlags: 0
