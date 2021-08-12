@@ -2095,9 +2095,10 @@ MonoBehaviour:
   - Ketika pasukan jepang melewati Pasar Bulu, mereka mendapatkan perlawanan kecil
     dari kampung terdekat tetapi langsung dipatahkan begitu saja dan menahan seorang
     pemuda.
-  - Pemuda tersebut kemudian bercerita mengenai peristiwa berdarah tersebut dan membuat.
-  - Tentara jepang yang menangkap pemuda ini langsung melaporkan menuju markas Kido
-    Butai.
+  - Pemuda tersebut kemudian bercerita mengenai peristiwa berdarah yang terjadi pada
+    malam itu.
+  - Tentara Jepang yang menangkap pemuda ini langsung memeriksa dan  melaporkan kejadian
+    tersebut menuju markas Kido Butai.
   textSpeed: 0.01
   text: {fileID: 48678091}
 --- !u!114 &1793884270

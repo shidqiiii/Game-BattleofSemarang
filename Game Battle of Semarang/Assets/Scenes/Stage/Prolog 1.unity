@@ -1612,7 +1612,7 @@ MonoBehaviour:
     Pandanaran terdapat pemberontakan yang dilakukan oleh tahanan jepang.
   - "Tepat setelah apel pemindahan, tahanan jepang langsung mengambil barang \u2013
     barang yang bisa dipakai untuk melukai anggota polisi yang berjaga. "
-  - Setelah pemberontakan yang terjadi, tahanan jepang melarikan diri ke tanpa arah.
+  - Setelah pemberontakan yang terjadi, tahanan jepang melarikan diri tanpa arah.
   - Bersamaan dengan kaburnya tahanan jepang, datang Pasukan Kido di Jalan Pandanaran.
   textSpeed: 0.01
   text: {fileID: 48678091}

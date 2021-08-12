@@ -542,7 +542,7 @@ MonoBehaviour:
     tetap menolak pernyataan penyerahan senjata. '
   - Mendengar jawaban Mr. Wongsonegoro, Jenderal Numora mengancam akan membombardir
     Semarang keesokan harinya apabila hal tersebut tidak terjadi. Akhirnya Mr. Wongsonegoro
-    menandatangani dan perjanjian tersebut.
+    menandatangani perjanjian tersebut.
   textSpeed: 0.01
   text: {fileID: 174190790}
 --- !u!114 &301513082
