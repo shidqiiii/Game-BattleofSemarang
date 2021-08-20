@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Options : MonoBehaviour
 {
     //public bool isMuted;
+    public GameObject menu, reset;
 
     // Start is called before the first frame update
     void Start()
@@ -32,8 +33,22 @@ public class Options : MonoBehaviour
 
     public void ResetLevel()
     {
-        PlayerPrefs.DeleteAll();
-        SceneManager.LoadScene(0);
+        menu.SetActive(false);
+        reset.SetActive(true);
+    }
+
+    public void ResetTheLevel(int choice)
+    {
+        if (choice == 1)
+        {
+            PlayerPrefs.DeleteAll();
+            SceneManager.LoadScene(0);
+        }
+        else if (choice == 0)
+        {
+            menu.SetActive(true);
+            reset.SetActive(false);
+        }
     }
 
     public void SceneToLoad(string scene)
