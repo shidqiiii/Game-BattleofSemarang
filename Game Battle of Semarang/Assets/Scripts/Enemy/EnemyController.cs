@@ -24,7 +24,7 @@ public class EnemyController : MonoBehaviour
 
     [Header("Hurt")]
     public float hurtTime;
-    private float hurtCoutner;
+    private float hurtCounter;
     public GameObject hitBox;
 
     [Header("Health")]
@@ -68,11 +68,11 @@ public class EnemyController : MonoBehaviour
                 break;
 
             case EnemyStates.hurt:
-                if(hurtCoutner > 0)
+                if(hurtCounter > 0)
                 {
-                    hurtCoutner -= Time.deltaTime;
+                    hurtCounter -= Time.deltaTime;
 
-                    if(hurtCoutner <=0)
+                    if(hurtCounter <= 0)
                     {
                         currentStates = EnemyStates.moving;
 
@@ -131,7 +131,7 @@ public class EnemyController : MonoBehaviour
     public void TakeHit()
     {
         currentStates = EnemyStates.hurt;
-        hurtCoutner = hurtTime;
+        hurtCounter = hurtTime;
         anim.SetTrigger("Hit");
         AudioManager.instance.PlaySFX(1);
 

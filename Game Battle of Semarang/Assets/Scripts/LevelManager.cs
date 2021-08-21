@@ -36,6 +36,8 @@ public class LevelManager : MonoBehaviour
     public IEnumerator RespawnCo()
     {
         PlayerController.instance.gameObject.SetActive(false);
+        PlayerHealthController.instance.DealDamage();
+        UIController.instance.UpdateHealthDisplay();
 
         yield return new WaitForSeconds(waitToRespawn - 1f / FadeScreen.instance.fadeSpeed);
         FadeScreen.instance.FadeToBlack();
@@ -44,8 +46,6 @@ public class LevelManager : MonoBehaviour
 
         PlayerController.instance.gameObject.SetActive(true);
         PlayerController.instance.transform.position = CheckpointController.instance.spawnPoint;
-        PlayerHealthController.instance.DealDamage();
-        UIController.instance.UpdateHealthDisplay();
     }
 
     public void EndLevel()

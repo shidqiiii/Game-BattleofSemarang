@@ -23,8 +23,13 @@ public class EnemyBullet : MonoBehaviour
         if(collision.tag == "Player")
         {
             PlayerHealthController.instance.DealDamage();
+            Destroy(gameObject);
+        }
+        if (collision.CompareTag("Tilemap"))
+        {
+            Destroy(gameObject);
         }
 
-        Destroy(gameObject);
+        
     }
 }

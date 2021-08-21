@@ -24,8 +24,6 @@ public class EnemyHit : MonoBehaviour
         {
             enemyCont.TakeHit();
 
-            //Nanti tambahin tag bullet;
-
             gameObject.SetActive(false);
         }
     }

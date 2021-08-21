@@ -638,7 +638,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Stage Gagal
+  m_Text: Level Gagal
 --- !u!1 &8367832545938320058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,7 +1291,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.25
-  m_Text: 'Stage
+  m_Text: 'Level
 
     Berhasil!'
 --- !u!114 &8544392582575339902
