@@ -1517,7 +1517,7 @@ PrefabInstance:
     - target: {fileID: 3175702255625117941, guid: 2badc4d787eb470408444001f4761dc2,
         type: 3}
       propertyPath: m_Text
-      value: Pilih Stage
+      value: Pilih Level
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2badc4d787eb470408444001f4761dc2, type: 3}
@@ -1657,7 +1657,7 @@ PrefabInstance:
     - target: {fileID: 3175702255625117941, guid: 2badc4d787eb470408444001f4761dc2,
         type: 3}
       propertyPath: m_Text
-      value: Pilih Stage
+      value: Pilih Level
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2badc4d787eb470408444001f4761dc2, type: 3}
