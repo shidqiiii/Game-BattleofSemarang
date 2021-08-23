@@ -607,10 +607,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - Tanggal 15 Oktober 1945, pasukan Kidobutai kembali menyerang Gedung gubernuran
+  - Tanggal 15 Oktober 1945, Pasukan Kidobutai kembali menyerang kantor gubernuran
     yang menjadi sasaran utama dengan tujuan untuk menahan Gubernur Jawa Tengah yaitu
     Mr. Wongsonegoro.
-  - 'di tanggal yang sama terdapat peristiwa berdarah di Penjara Bulu. '
+  - 'Pada tanggal yang sama terdapat peristiwa berdarah di Penjara Bulu. '
   - 'Para pemuda datang untuk membunuh semua tawanan jepang yang berada di penjara
     bulu sebagai bentuk balas dendam terhadap temannya yang dibunuh oleh jepang. '
   textSpeed: 0.01

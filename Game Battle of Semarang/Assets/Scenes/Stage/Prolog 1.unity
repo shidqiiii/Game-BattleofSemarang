@@ -610,7 +610,7 @@ MonoBehaviour:
   sentences:
   - Pertempuran Lima hari di Semarang bermula pada tanggal 14 Oktober 1945 pasukan
     Jepang berseragam lengkap tiba - tiba menyerang dan melucuti petugas kepolisian
-    yang sedang berjaga persediaan air minum di Jalan Wungkai.
+    yang sedang berjaga persediaan air minum di Jalan Wungkal.
   - Setelah kejadian itu menyebar berita bahwa Jepang telah meracuni air minum tersebut.
   - Dr. Kariadi yang menjabat sebagai kepala laboratorium Rumah Sakit Purusara pada
     saat itu langsung meneliti berita tersebut.
@@ -1610,10 +1610,11 @@ MonoBehaviour:
   sentences:
   - Pada tanggal yang sama, di bekas Asrama Sekolah Pelayaran yang berada di Jalan
     Pandanaran terdapat pemberontakan yang dilakukan oleh tahanan jepang.
-  - "Tepat setelah apel pemindahan, tahanan jepang langsung mengambil barang \u2013
+  - "Tepat setelah apel pemindahan, tahanan Jepang langsung mengambil barang \u2013
     barang yang bisa dipakai untuk melukai anggota polisi yang berjaga. "
-  - Setelah pemberontakan yang terjadi, tahanan jepang melarikan diri tanpa arah.
-  - Bersamaan dengan kaburnya tahanan jepang, datang Pasukan Kido di Jalan Pandanaran.
+  - Setelah pemberontakan yang terjadi, tahanan Jepang melarikan diri tanpa arah.
+  - Bersamaan dengan kaburnya tahanan Jepang, datang Pasukan Kido dari arah Jalan
+    Pandanaran.
   textSpeed: 0.01
   text: {fileID: 48678091}
 --- !u!114 &1793884270
