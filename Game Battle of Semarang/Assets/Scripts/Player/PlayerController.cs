@@ -16,8 +16,8 @@ public class PlayerController : MonoBehaviour
     private bool canDoubleJump;
 
     private Animator anim;
-    private SpriteRenderer theSR;
 
+    private bool isRight;
     public float knockBackLength, knockBackForce;
     private float knockBackCounter;
 
@@ -32,7 +32,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        theSR = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -76,17 +75,19 @@ public class PlayerController : MonoBehaviour
 
             if (theRB.velocity.x < 0)
             {
+                isRight = false;
                 transform.eulerAngles = Vector2.up * 180;
             }
             else if (theRB.velocity.x > 0)
             {
+                isRight = true;
                 transform.eulerAngles = Vector2.zero;
             }
         }
         else
         {
             knockBackCounter -= Time.deltaTime;
-            if (!theSR.flipX)
+            if (isRight)
             {
                 theRB.velocity = new Vector2(-knockBackForce, theRB.velocity.y);
             }
