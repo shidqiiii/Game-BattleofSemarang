@@ -20209,10 +20209,55 @@ PrefabInstance:
       propertyPath: restart
       value: Stage 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2116061017148272491, guid: 7926554bad339a64c9c2c8fae652bc83,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2116061017148272491, guid: 7926554bad339a64c9c2c8fae652bc83,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SceneToLoad
+      objectReference: {fileID: 0}
+    - target: {fileID: 2116061017148272491, guid: 7926554bad339a64c9c2c8fae652bc83,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Stage 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3929435009338455155, guid: 7926554bad339a64c9c2c8fae652bc83,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990490512820999092, guid: 7926554bad339a64c9c2c8fae652bc83,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990490512820999092, guid: 7926554bad339a64c9c2c8fae652bc83,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SceneToLoad
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990490512820999092, guid: 7926554bad339a64c9c2c8fae652bc83,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: levelSelect
+      objectReference: {fileID: 0}
+    - target: {fileID: 5448291514519123917, guid: 7926554bad339a64c9c2c8fae652bc83,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5448291514519123917, guid: 7926554bad339a64c9c2c8fae652bc83,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SceneToLoad
+      objectReference: {fileID: 0}
+    - target: {fileID: 5448291514519123917, guid: 7926554bad339a64c9c2c8fae652bc83,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: mainMenu
       objectReference: {fileID: 0}
     - target: {fileID: 5843444022200808873, guid: 7926554bad339a64c9c2c8fae652bc83,
         type: 3}

@@ -48,15 +48,9 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    public void LevelSelect()
+    public void SceneToLoad(string scene)
     {
-        SceneManager.LoadScene(levelSelect);
-        Time.timeScale = 1f;
-    }
-
-    public void MainMenu()
-    {
-        SceneManager.LoadScene(mainMenu);
+        SceneManager.LoadScene(scene);
         Time.timeScale = 1f;
     }
 }

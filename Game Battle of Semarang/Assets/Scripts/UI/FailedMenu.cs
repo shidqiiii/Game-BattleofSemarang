@@ -6,16 +6,12 @@ using UnityEngine.SceneManagement;
 public class FailedMenu : MonoBehaviour
 {
     public static FailedMenu instance;
-
-    public string restart, levelSelect, mainMenu;
-
     public GameObject failedScreen;
 
     private void Awake()
     {
         instance = this;
     }
-
     // Start is called before the first frame update
     void Start()
     {
@@ -33,18 +29,8 @@ public class FailedMenu : MonoBehaviour
         failedScreen.SetActive(true);
     }
 
-    public void Restart()
+    public void SceneToLoad(string scene)
     {
-        SceneManager.LoadScene(restart);
-    }
-
-    public void LevelSelect()
-    {
-        SceneManager.LoadScene(levelSelect);
-    }
-
-    public void MainMenu()
-    {
-        SceneManager.LoadScene(mainMenu);
+        SceneManager.LoadScene(scene);
     }
 }
