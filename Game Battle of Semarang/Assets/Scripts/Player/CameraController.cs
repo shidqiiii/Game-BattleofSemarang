@@ -36,6 +36,7 @@ public class CameraController : MonoBehaviour
             /* float ClampedY = Mathf.Clamp(transform.position.y, minHeight, maxHeight);
             transform.position = new Vector3(transform.position.x, ClampedY, transform.position.z); */
 
+            //Transform terbaru dikurang lastpos
             Vector2 amountToMove = new Vector2(transform.position.x - lastPos.x, transform.position.y - lastPos.y);
 
             background.position = background.position + new Vector3(amountToMove.x, amountToMove.y, 0f);

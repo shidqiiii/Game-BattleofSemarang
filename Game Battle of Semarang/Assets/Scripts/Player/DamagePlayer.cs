@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Fungsi untuk DealDamage player ketika mengenai Spike
 public class DamagePlayer : MonoBehaviour
 {
     // Start is called before the first frame update
