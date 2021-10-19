@@ -116,7 +116,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 135
+  controlID: 39
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 342}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 45
+  controlID: 40
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 109
+  controlID: 141
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -371,23 +371,23 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 21
+      y: 0
       width: 867
-      height: 426
-    m_Scale: {x: 0.3944444, y: 0.39444444}
-    m_Translation: {x: 433.5, y: 213}
+      height: 447
+    m_Scale: {x: 0.4138889, y: 0.4138889}
+    m_Translation: {x: 433.5, y: 223.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1099.0142
+      x: -1047.3826
       y: -540
-      width: 2198.0283
+      width: 2094.7651
       height: 1080
     m_MinimalGUI: 1
-  m_defaultScale: 0.39444444
+  m_defaultScale: 0.4138889
   m_LastWindowPixelSize: {x: 867, y: 447}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -945,9 +945,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 22350000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 4cc7ffff3cc9ffffd4c9ffff54d0ffff62d0fffffcd2ffff5ed4ffff62d4ffff64d6fffffedbffff02dcffff10deffffc0e3ffffc4e3ffffc6e5ffff62e6ffffa0e7ffffbee7ffffdce7ffff0ae8ffffe2e9ffff94eaffff92ebffffbcebffff1eedffff3cedffff64efffff5cf5ffffeaf5ffff08f6ffffbaf6ffff42f7ffff5cfbffff1a430000684300008a4400001c450000
+      m_ExpandedIDs: 16eeffff2aeeffffd4eeffffe6eeffffeceefffff2eeffff42efffff46efffff4aefffff4eefffff54efffff0af3ffff38f6ffff3ef6ffff82f6fffffef6ffff5cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1083,21 +1083,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 480}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000008c3e00008e3e0000903e0000983e00009a3e0000de3e0000e03e0000f23e0000
+    m_ExpandedIDs: ffffffff000000008c3e00008e3e0000903e0000923e0000943e0000963e0000983e00009a3e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: LevelManager
-      m_OriginalName: LevelManager
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 13602
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 
