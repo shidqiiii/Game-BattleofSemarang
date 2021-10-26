@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class Options : MonoBehaviour
 {
     public GameObject menu, reset;
-    public int scene;
 
     // Start is called before the first frame update
     void Start()
@@ -49,7 +48,7 @@ public class Options : MonoBehaviour
         }
     }
 
-    public void SceneToLoad()
+    public void SceneToLoad(string scene)
     {
         SceneManager.LoadScene(scene);
     }

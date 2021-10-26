@@ -16,6 +16,8 @@ public class MenuManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        FadeScreen.instance.Fade();
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             SceneToLoad();

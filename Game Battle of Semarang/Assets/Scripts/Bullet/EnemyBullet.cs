@@ -25,7 +25,7 @@ public class EnemyBullet : MonoBehaviour
             PlayerHealthController.instance.DealDamage();
             Destroy(gameObject);
         }
-        if (collision.CompareTag("Tilemap"))
+        if (collision.tag == "Tilemap")
         {
             Destroy(gameObject);
         }

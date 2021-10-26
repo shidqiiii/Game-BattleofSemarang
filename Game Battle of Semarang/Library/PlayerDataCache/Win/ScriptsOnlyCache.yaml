@@ -1374,7 +1374,7 @@ ScriptsOnlyBuild:
     className: PixelPerfectCamera
   - hash:
       serializedVersion: 2
-      Hash: e7ea5927b432bd70cb03438ebae63486
+      Hash: 2a0281ee4e67a6d6ad657d864c1f08fb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Options
